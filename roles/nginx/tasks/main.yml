@@ -5,3 +5,5 @@
     state: latest
   with_items:
     - httpd
+- name: Restart HTTPD (Red Hat/Centos)
+  service: name=httpd state=restarted
